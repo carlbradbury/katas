@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.IO;
+using developwithpassion.specifications.extensions;
 using developwithpassion.specifications.rhino;
 using katas.PrettyPathPrint;
 using Machine.Specifications;
@@ -13,10 +14,6 @@ namespace katas.specs.PrettyPathPrint
 
         public abstract class concern : Observes<PrettyPathPrinter>
         {
-//            Establish c = () =>
-//            {
-//                provide_a_basic_sut_constructor_argument(2);
-//            };
         }
 
         [Subject(typeof(PrettyPathPrinter))]
@@ -26,7 +23,7 @@ namespace katas.specs.PrettyPathPrint
                                       {
                                           path = @"C:\Program Files";
                                       };
-
+            
             Because b = () =>
                 result = sut.print(path);
 
@@ -42,10 +39,10 @@ namespace katas.specs.PrettyPathPrint
         {
             private Establish e = () =>
             {
-                path = @"xxx";
+                path = "xxx";
             };
             Because b = () =>
-                           catch_exception(() => sut.shut_down());
+                           catch_exception(() => sut.print(path));
 
             It should_throw_a_security_exception = () =>
                 exception_thrown_by_the_sut.ShouldBeAn<ArgumentException>();
