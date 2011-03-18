@@ -111,6 +111,9 @@
   <ItemGroup>
     <Compile Include="MessageGeneratorSpecs.cs" />
     <Compile Include="PrettyPathPrint\PrettyPathPrinterSpecs.cs" />
+    <Compile Include="PrettyPathPrint\Visitor.cs" />
+    <Compile Include="PrettyPathPrint\VisitorExtensions.cs" />
+    <Compile Include="PrettyPathPrint\VisitorExtensionSpecs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
