@@ -34,8 +34,4 @@ namespace katas.specs.PrettyPathPrint
             static Visitor<string> visitor;
         }
     }
-
-    internal class ValueReturningVisitor<T, T1>
-    {
-    }
 }

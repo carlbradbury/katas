@@ -111,6 +111,7 @@
   <ItemGroup>
     <Compile Include="MessageGeneratorSpecs.cs" />
     <Compile Include="PrettyPathPrint\PrettyPathPrinterSpecs.cs" />
+    <Compile Include="PrettyPathPrint\ValueReturningVisitor.cs" />
     <Compile Include="PrettyPathPrint\Visitor.cs" />
     <Compile Include="PrettyPathPrint\VisitorExtensions.cs" />
     <Compile Include="PrettyPathPrint\VisitorExtensionSpecs.cs" />
